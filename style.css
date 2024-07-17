@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
+    /* border: 1px white solid;border-width: thin; */
 }
 
  body{
@@ -157,10 +158,16 @@ section .hero{
     top: -7rem;
     left: 18rem;
     z-index: 3;
+    cursor: pointer;
+    transition: background .2s;
+}
+.circle-arrow:hover{
+    background: transparent;
+    border: 1px solid #435c7a;border-width: thin;
 }
 .img{
     position: relative;
-    top: -25.3rem;
+    top: -37.3rem;
     z-index: 2;
 }
 
@@ -178,10 +185,10 @@ section .hero{
     background: #FFF;
     transform: skewy(-2deg) ;
 }
-.images{
+/* .images{
     -webkit-mask-image: url(resources/img.svg);
     z-index: 1000;
-}
+} */
 
 
 /* CREDENTIALS */
@@ -336,8 +343,46 @@ section .hero{
 
 
 
-
-
+/* CONTACT */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact h3{
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.06rem;
+    width: 56%;
+    text-align: center;
+}
+.contact h3 span{
+    color: #FB6514;
+}
+.contact-form{
+    width: 56%;
+}
+.contact .ratings{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+.ratings span{
+    display: flex;
+    align-items: center;
+    color: #ffffff8e;
+    font-family: 'poppins';
+    font-weight: 200 !important;
+}
+.ratings span svg{
+    fill: #ffffff69 !important;
+}
 
 
 
@@ -404,13 +449,25 @@ section .hero{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url("images/bg.jpg") #030728 no-repeat center;
+    /* background: url("images/bg.jpg") #030728 no-repeat center; */
+  }
+  .testimonial-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6.7rem;
+    /* padding-left: 5rem; */
+    color: #fff;
+    font-size: 4rem;
+
   }
   
   .slider-wrapper {
     overflow: hidden;
-    max-width: 1200px;
+    max-width: 2200px;
     margin: 0 70px 55px;
+    /* margin-bottom: 3rem;
+    margin-left: 4rem; */
   }
   
   .card-list .card-item {
