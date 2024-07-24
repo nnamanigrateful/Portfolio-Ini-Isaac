@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Lexend:wght@100..900&display=swap');
@@ -35,6 +36,12 @@
  .nav-links{
     display: flex;
     gap: 1.88rem;
+ }
+ .hide-content{
+    display: flex;
+ }
+ .reveal-content{
+    display: none;
  }
 
 section .hero{
@@ -227,6 +234,7 @@ section , nav, footer{
     z-index: 10 !important;
 }
 .cred-card{
+    order: 1;
     width: 40%;
     aspect-ratio: 1/1;
     border-radius: 4.66563rem;
@@ -275,6 +283,7 @@ section , nav, footer{
     /* height: 34.40881rem; */
     width: 55%;
     padding-top: 3rem;
+    order: 2;
 }
 .cred-info h2{
     color: var(--white, #FFF);
@@ -343,19 +352,24 @@ section , nav, footer{
     display: flex;
     /* grid-auto-columns: 4rem; */
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1rem;
+
     
 }
 
 .portfolios .port{
-    width: 27rem ;
-    aspect-ratio: 32/20;
-    flex-shrink: 0;
-    border-radius: 1.25rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:nowrap;
+    /* justify-content: center;
+    align-items: center; */
+    width: 24rem ;
+    aspect-ratio: 32/20;
+    /* flex-shrink: 0; */
+    border-radius: 1.25rem;
+    
     margin-bottom: 2rem;
-    /* gap: 4rem; */
+    gap: 2rem;
     border: 1px solid white;
     
     background: var(--gradient, linear-gradient(207deg, rgba(0, 0, 0, 0.00) 47.41%, rgba(0, 0, 0, 0.36) 76.39%, rgba(0, 0, 0, 0.50) 89.23%));
@@ -389,7 +403,7 @@ section , nav, footer{
     width: 56%;
     text-align: center;
 }
-.contact h3 span{
+.contact h2 span{
     color: #FB6514;
 }
 .contact-form{
@@ -442,13 +456,13 @@ section , nav, footer{
     
 }
 
-.message svg{
+.message .svg{
     background: #FFEAD5;
     padding: 1rem;
     border-radius: 49.9%;
     line-height: 1rem;
     fill: #FD853A;
-    height: 4rem !important ;
+    height: 4rem ;
     width: 4rem;
 }
 .form-inner button{
@@ -568,7 +582,7 @@ footer .title h3{
     line-height: 6rem;
     padding: 1rem 0;
 }
-footer .title a{
+footer .title a, .my-profile a{
     padding: 1rem 1.5rem;
     background: #FD853A;
     color: #FFF;
@@ -635,8 +649,8 @@ footer .title a{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    margin-top: -40px;
+    height: auto;
+    margin-top: 40px;
     /* background: url("images/bg.jpg") #030728 no-repeat center; */
   }
   .testimonial-header{
@@ -659,7 +673,7 @@ footer .title a{
     height: auto;
     color: #fff;
     user-select: none;
-    padding: 35px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -792,6 +806,236 @@ footer .title a{
       display: none;
     }
   }
+  @media (max-width: 468px) {
+    section{
+        padding: 0 2rem;
+    }
+    .slider-wrapper {
+      margin: 0 10px 40px;
+    }
+  
+    .slider-wrapper .swiper-slide-button {
+      display: none;
+    }
+
+    .profile-header,footer .title{
+        flex-direction: column;
+    }
+    .profile-header h2, footer .title h3{
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .cred-container{
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .cred-card{
+        width: 100%;
+        border-radius: 15px;
+        padding: 2rem 2.4rem;
+        order: 2;
+    }
+    
+    .cred-card h2{
+        font-size: 1.7rem;
+        margin-bottom: 3.1rem;
+        text-align: center;
+    }
+    .cred-card p{
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+    .cred-card h3{
+        font-size: 1.8rem;
+        font-style: normal;
+        margin-bottom: 2rem;
+    }
+    .cred-card .svg{position: relative;left: 55%;}.cred-info{width: 55%;padding-top: 1.5rem;}
 
 
- 
+    .portfolios .port{margin-bottom: 0rem !important;}
+    .profile-header h2{width: 90%;font-size: 1.8rem;}.profile-header {padding: 2rem 0;}
+
+    .cred-info{
+        width: 100%;
+        padding-top: 3rem;
+        order: 1;
+    }
+    .cred-info h2{
+
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        text-align: center;    
+    }
+    
+    .cred-info p{
+
+        font-size: .9rem;
+        margin-bottom: 1rem;
+    }
+
+    .hide-content{
+        display: none !important;
+    }
+    .reveal-content{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .testimonial-header{
+        padding: 3rem 0 2rem 0;
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+      }
+      .card-list .card-item{
+        padding: 1rem;
+        border-radius: 25px;
+      }
+      .card-head{
+        gap: .7rem;
+      }
+      .card-head p{
+        margin-top: .6rem;
+      }
+      .card-item i{
+        margin-top: .8rem;
+      }
+      .card-item .blue{
+        margin-top: .8rem;
+        font-size: .9rem;
+      }
+      .slider-wrapper {
+        margin: 0 0 30px;
+      }
+      
+      .card-item .detail{
+        margin-top: .8rem;
+        font-size: .8rem;
+      }
+
+
+
+
+
+
+    .contact h2{
+        font-size: 1.5rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .contact-form{
+        width: 100%;
+        margin-top: 1.7rem;
+    }
+    .form-inner{
+        padding: 1rem;
+    }
+    .email{
+        padding:.4rem .8rem;
+  }
+  .email input::placeholder, .message textarea::placeholder{
+    font-size: .8rem;
+}
+.message {
+    width: 100%;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    gap: .4rem;
+    
+}
+
+.message .svg{
+    padding: .2rem;
+    height: fit-content ;
+    width: fit-content;
+    display: flex;justify-content: center;
+}
+.form-inner button{
+   padding: .7rem 1.4rem;;
+   font-size: 1rem;
+   right: -70%;
+}
+
+
+
+
+
+.contact .ratings{
+    margin-top: 1rem;
+
+    justify-content: space-between;
+}
+.ratings span{
+    font-size: .4rem;
+}
+.ratings span svg{
+    fill: #ffffff69 !important;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 2rem;
+    padding: 2rem 0;
+ }
+footer .title{margin-bottom: 1rem;}
+footer .title h3{
+    font-size: 2rem;
+    width: 100%;
+    line-height: normal;
+}
+footer .title a, .my-profile a{
+    padding: .6rem 1rem;
+    background: #FD853A;
+    color: #FFF;
+    border-radius: 4rem;
+    font-size: .8rem;
+}
+.footer-inner{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.footer-links {
+    display: flex;
+    color: #FFF;
+    
+    font-size: 2rem;
+    font-style: normal;
+
+    /* display: flex; */
+    gap: 4rem;
+    margin-bottom: 3rem;
+    
+}
+.footer-links a{
+    display: inline-flex;
+    font-family: 'Poppins';     
+    /* margin-right: 4rem ; */
+    color: #FFF;
+    font-weight: 200 !important;
+}
+.socials {
+    display: flex;
+    gap: 2.3rem;
+}
+.socials svg{
+    background: #ffffff46;
+    padding: 1rem;
+    border-radius: 49.9%;
+    line-height: 1rem;
+    /* fill: #fff; */
+    height: 4rem !important ;
+    width: 4rem;
+    
+}
+.socials svg:hover{
+    background: #ffffff57;
+
+}
+
+}
