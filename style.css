@@ -8,7 +8,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    border: 1px white solid;border-width: thin;
+    /* border: 1px white solid;border-width: thin; */
 }
 
  body{
@@ -49,6 +49,8 @@ section .hero{
     width: 63.875rem;
     border: white 1px solid;
     margin: 0 auto;
+    background: url(resources/icons/bg_top.png) !important;
+
 }
 section{
     
@@ -153,8 +155,8 @@ section , nav, footer{
 .hire{
     display: flex;
 
-    width: 50%;
-    height: 2rem;
+    width: 53%;
+    height: 1.7rem;
     padding: 1.6875rem 0;
     justify-content: center;
     align-items: center;
@@ -165,8 +167,8 @@ section , nav, footer{
 }
 .portfolio{
     display: flex;
-    width: 50%;
-    height: 2rem;
+    width: 47%;
+    height: 1.7rem;
     padding: 1.68rem 0;
     justify-content: center;
     align-items: center;
@@ -189,22 +191,23 @@ section , nav, footer{
 
 
 .band{
-    margin-top: 8rem;
-    height: 9.187rem;
-    background: #FB6514;
+    margin-top: 0;
+    /* height: 9.187rem; */
+    /* background: #FB6514; */
     width: 100vw;
-    padding-top:2.5rem;
+    /* padding-top:2.5rem; */
 
 }
 .band-inner{
-    margin: 0 auto;
-    height: 4rem;
-    background: #FFF;
-    transform: skewy(-2deg) ;
+    /* margin: 0 auto; */
+    /* height: 4rem; */
+    /* background: #FFF; */
+    /* transform: skewy(-2deg) ; */
 }
 
 
 /* CREDENTIALS */
+
 .cred-container{
     display: flex;
     justify-content: space-between;
@@ -257,9 +260,10 @@ section , nav, footer{
     margin-bottom: 2rem;
 }
 .cred-card .svg{
-    position: relative;
-    left: 65%;
+    position: absolute;
+    right: 23%;
     /* margin: auto right; */
+    width: 100%;
 }
 .cred-info{
     /* height: 34.40881rem; */
@@ -391,9 +395,10 @@ section , nav, footer{
 .contact-form{
     width: 56%;
     margin-top: 3.7rem;
+    /* padding: -1rem; */
 }
 .form-inner{
-    padding: 2.8rem;
+    padding: 2rem;
     border: 1px solid #FFF;border-width: thin;
     width: 100%;
     border-radius: 1.7rem;
@@ -430,7 +435,7 @@ section , nav, footer{
 }
 .message {
     display: flex;
-    align-items: center;
+    align-content: center !important;
     justify-content: space-between;
     width: 100%;
     padding-top: 2rem;
@@ -443,6 +448,7 @@ section , nav, footer{
 
     height: 2rem ;
     margin-right: 10rem;
+    margin-bottom: 1rem;
 }
 .form-inner button{
    padding: 1.2rem 2.2rem;
@@ -451,9 +457,10 @@ section , nav, footer{
    color: #FFF;
    font-size: 1.2rem;
    font-weight: 500;
-   position: relative;
-   right: -75%;
+   position: absolute;
+   right: 6.5% !important;
    border: none;
+   bottom: 10%;
 }
 
 
@@ -497,7 +504,7 @@ section , nav, footer{
 
  .circle{
     border-radius: 55.32813rem;
-    opacity: 0.7;
+    opacity: 0.4;
     background: #DE28CC;
     position: absolute;
     top: 10%;
@@ -522,7 +529,7 @@ section , nav, footer{
 
  .circle-footer1{
     border-radius: 55.32813rem;
-    opacity: 0.7;
+    opacity: 0.4;
     background: #52A2F7;
     position: absolute;
     filter: blur(100px);
@@ -535,7 +542,7 @@ section , nav, footer{
  }
  .circle-footer2{
     border-radius: 55.32813rem;
-    opacity: 1;
+    opacity: .4;
     background: #DE28CC;
     position: absolute;
     filter: blur(100px);
@@ -649,7 +656,7 @@ footer .title a, .my-profile a{
     justify-content: center;
     height: auto;
     margin: 2rem 0;
-    /* background: url("images/bg.jpg") #030728 no-repeat center; */
+    background: url("resources/icons/bg\ top.png");
   }
   .testimonial-header{
     display: flex;
@@ -677,10 +684,10 @@ footer .title a, .my-profile a{
     /* align-items: center; */
     /* justify-content: center; */
     border-radius: 1.875rem;
-    border: 2px solid rgba(255, 255, 255, 0.50);
+    border: 2px solid rgba(255, 255, 255, 0.11);
     
-    /* opacity: ; */
-    background: #2a2d3e7c;  
+
+    background: #2a2d3e56;  
     backdrop-filter: blur(2px);
   }
   .test-card{
@@ -808,6 +815,90 @@ footer .title a, .my-profile a{
 }
 
 
+/* 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+} */
+
+.wrapper {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 100px;
+  margin-top: 5rem;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+.item {
+  width: 200px;
+  height: 4rem;
+  background-color: #ffffff0a;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  color: #ffffff75;
+  text-align: center;
+  line-height: 4rem;
+  /* opacity: .5; */
+}
+
+.item1 {
+  animation-delay: calc(30s / 8* (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
 
 
 
@@ -856,14 +947,14 @@ footer .title a, .my-profile a{
  
     }
     .cred-card{
-        width: 46%;
+        width: 47%;
         border-radius: 2.5rem;
 
     }
     
     .cred-card h2{
         font-size: 2.8rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1rem;
     }
     .cred-card p{
         font-size: 1.3rem;
@@ -871,14 +962,14 @@ footer .title a, .my-profile a{
     }
     .cred-card h3{
         font-size: 2.3rem;
-        margin-bottom: 1.8rem;
+        margin-bottom: 1rem;
     }
-    .cred-card .svg{
+    .cred-card svg{
         position: relative;
         left: 55%;
     }
     .cred-info{
-        width: 53%;
+        width: 52%;
         /* padding-top: 3rem; */
         order: 2;
     }
@@ -908,7 +999,7 @@ footer .title a, .my-profile a{
     .form-inner button{
         padding: .7rem 1.4rem;;
         font-size: 1rem;
-        right: -66%;
+        /* right: %; */
      }
      .contact h2{
         font-size: 2rem;
@@ -959,9 +1050,9 @@ footer .title a, .my-profile a{
     
   }
 
-  @media (max-width: 658px) {
+  @media (max-width: 668px) {
     .cred-info p{
-        font-size: .9rem;
+        font-size: 1rem;
     }
     .cred-container{
         margin-top: 6rem;margin-bottom: 6rem;
@@ -974,10 +1065,24 @@ footer .title a, .my-profile a{
         order: 1;
     }
     .cred-card{
-        width: 80%;
+        width: 67%;
         border-radius: 2.5rem;
         order: 2;
 
+    }
+    .cred-card h2{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .cred-card p{
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+    }
+    .cred-card h3{
+        font-size: 2rem;
+        font-style: normal;
+        margin-bottom: 1rem;
     }
     .hide-content{
         display: none !important;
@@ -995,7 +1100,7 @@ footer .title a, .my-profile a{
 
     .contact-form{
         width: 100%;
-        max-width: 4rem !important;
+        max-width: 40rem !important;
         margin-top: 1.7rem;
         padding: 1rem;
     }
@@ -1005,7 +1110,7 @@ footer .title a, .my-profile a{
     .form-inner button{
         padding: .7rem 1.4rem;;
         font-size: 1rem;
-        right: -66%;
+        right: 10%;
      }
      .contact h2{
         font-size: 2rem;
@@ -1014,6 +1119,25 @@ footer .title a, .my-profile a{
     }
     .email input::placeholder, .message textarea::placeholder{
         font-size: .8rem;
+    }
+    footer .title{
+        flex-direction: column;
+    }
+    footer .title h3{
+        font-size: 1.8rem;
+        width: 100%;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+    footer .title a, .my-profile a{
+        padding: .5rem .7rem;
+        border-radius: 3rem;
+        font-size: 1rem;
+        width: 70%;
+    }
+    .footer-links{
+        font-size: 1rem;
+        gap: 1rem;
     }
 
   }
@@ -1063,18 +1187,18 @@ footer .title a, .my-profile a{
 
     }
     .hero-call-to-action a{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
    
     .hero-call-to-action svg{
-        width: 2rem;
-        height: 2rem;
-        flex-shrink: 0;
+        width: 1.4rem;
+        height: 1.4rem;
+        /* flex-shrink: 0; */
     }
     
 
-    section{
-        padding: 0 2rem;
+    section, nav, footer{
+        padding: 0 2rem !important;
     }
     .slider-wrapper {
       margin: 0 10px 40px;
@@ -1118,7 +1242,7 @@ footer .title a, .my-profile a{
         font-style: normal;
         margin-bottom: 2rem;
     }
-    .cred-card .svg{position: relative;left: 55%;}.cred-info{width: 55%;padding-top: 1.5rem;}
+    .cred-card svg{position: absolute;right:5% !important;}.cred-info{width: 55%;padding-top: 1.5rem;}
 
 
 
@@ -1186,7 +1310,7 @@ footer .title a, .my-profile a{
 
 
 
-    .contact h2{
+ .contact h2{
         font-size: 1.5rem;
         width: 100%;
         margin-top: 2rem;
@@ -1213,14 +1337,15 @@ footer .title a, .my-profile a{
 
 .message .svg{
     padding: .2rem;
-    height: fit-content ;
-    width: fit-content;
+    height: 2rem;
+    width: 2rem;
     display: flex;justify-content: center;
+    /* align-items: center; */
 }
 .form-inner button{
    padding: .5rem .8rem;;
    font-size: .8rem;
-   right: -64%;
+   right: 15%;
 }
 
 
@@ -1246,16 +1371,14 @@ footer{
  }
 footer .title{margin-bottom: 1rem;}
 footer .title h3{
-    font-size: 2rem;
+    font-size: 1.8rem;
     width: 100%;
     line-height: 1.8rem;
 }
 footer .title a, .my-profile a{
     padding: .5rem .7rem;
-    background: #FD853A;
-    color: #FFF;
     border-radius: 3rem;
-    font-size: .9rem;
+    font-size: 1rem;
     width: 90%;
 }
 .footer-inner{
