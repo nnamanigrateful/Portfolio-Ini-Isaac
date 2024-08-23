@@ -1,0 +1,11 @@
+{% load static %}
+<nav>
+    <div class="logo"><a href="{% url 'home' %}">Crufix</a></div>
+    <div class="nav-links hide-content">
+        <a href="{% static '/resume.pdf' %}" download="resume.pdf">Credentials</a>
+        <a href="{% url 'portfolio' %}">Portfolio</a>
+        <a href="{% url 'home'%}#testimonial">Testimonial</a>
+    </div>
+
+    <div class="menu reveal-content"><i class="fa-solid fa-bars" style="color: white;"></i></div>
+</nav>

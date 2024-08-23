@@ -1,0 +1,508 @@
+{% load static %}
+{% load custom_tags %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crufix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+
+    <header>
+
+        {% include 'nav.html' %}
+
+    </header>
+
+    <section class="hero" style="overflow-y: hidden;">
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+
+        <div class="hero-text">
+            <h1><span>Crafting</span> User Centric Digital Experience</h1>
+        </div>
+        <div class="hero-sub-text">
+            Discover the ultimate AI-powered solution to streamline every step of your literature review process.
+            Effortlessly search through extensive academic databases
+        </div>
+
+        <div class="hero-call-to-action">
+            <div class="portfolio">
+                <a href="{% url 'portfolio' %}">Portfolio</a>
+            </div>
+            <div class="hire" style="display: flex;align-items: center;">
+                <a href="" class="pointer">Hire me</a>
+                <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="icon / outlined / directions / straight arrows / up right">
+                        <path id="Vector" d="M13.975 33.625L33.225 14.375" stroke="white" stroke-width="2.2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path id="Vector_2" d="M13.975 14.375H33.225V33.625" stroke="white" stroke-width="2.2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="snippet">
+
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide snippetcard">
+                        <img src="{% static 'resources/icons/Frame 66.png' %}  " alt="">
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="{% static 'resources/icons/Frame 61.png' %}  " alt="">
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="{% static 'resources/icons/Frame 66.png' %}  " alt="">
+                    </div>
+                </div>
+
+
+                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div> -->
+
+
+
+
+            </div>
+    </section>
+
+    <div class="band">
+        <div class="band-inner">
+
+            <div class="wrapper">
+                <div class="item item1">
+                    <h2>UX Design</h2>
+                </div>
+                <div class="item item2">
+                    <h2>App Design</h2>
+                </div>
+                <div class="item item3">
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="item item4">
+                    <h2>Wireframe</h2>
+                </div>
+                <div class="item item5">
+                    <h2>User Research</h2>
+                </div>
+                <div class="item item6">
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="item item7">
+                    <h2>User Research</h2>
+                </div>
+                <div class="item item8">
+                    <h2>UX Design</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="middle-svg vector">
+        <img src="resources/middle bg.svg" alt="">
+
+    </div> -->
+    <section class="credentials">
+
+
+        <div class="cred-container">
+            <div class="cred-card">
+                <h2>Credentials</h2>
+                <p>More About ME</p>
+                <h3>Credentials</h3>
+                <div class="svg" style="width: fit-content;">
+                    <a href="{% static '/resume.pdf' %}" download="resume.pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 65 65" fill="none">
+                            <g clip-path="url(#clip0_316_1794)">
+                                <path
+                                    d="M24.2124 21.9896V16.6148C24.2124 15.1893 24.7787 13.8223 25.7867 12.8143C26.7946 11.8063 28.1617 11.2401 29.5872 11.2401H48.3989C49.8244 11.2401 51.1915 11.8063 52.1994 12.8143C53.2074 13.8223 53.7737 15.1893 53.7737 16.6148V48.8635C53.7737 50.2889 53.2074 51.656 52.1994 52.664C51.1915 53.672 49.8244 54.2382 48.3989 54.2382H29.5872C28.1617 54.2382 26.7946 53.672 25.7867 52.664C24.7787 51.656 24.2124 50.2889 24.2124 48.8635V43.4887"
+                                    stroke="#6A8BF5" stroke-width="1.86624" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M8.08815 32.7391H43.0242L34.962 24.6769" stroke="#6A8BF5"
+                                    stroke-width="1.86624" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M34.962 40.8013L43.0242 32.7391" stroke="#6A8BF5" stroke-width="1.86624"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_316_1794">
+                                    <rect width="64.4972" height="64.4972" fill="white"
+                                        transform="matrix(-1 0 0 1 64.5228 0.490479)" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+
+            <div class="cred-info">
+                <h2>Why <span>Hire Me</span>?</h2>
+                <p>As a skilled UI/UX designer with 3 years of experience, I understand that every design should be
+                    intuitive. I create designs that both look great and work really well for your customers. I'm great
+                    at understanding what users need and turning that into designs they'll enjoy using.
+                </p>
+                <p> Hiring me will give your company an advantage, helping you make products and services that really
+                    impress your customers.
+                </p>
+                <p>Invest in my services and watch your business thrive!</p>
+            </div>
+
+        </div>
+    </section>
+    <div class="circle2">
+    </div>
+
+    <section class="my-profile">
+        <div class="profile-header">
+            <h2>Lets have a look at my <span>Portfolio</span></h2>
+            <a href="{% url 'portfolio' %}" class="hide-content">See All</a>
+        </div>
+
+        <div class="portfolios">
+            {% for project in project %}
+            {% if forloop.counter <= 6 %} <div class="port1 port"
+                style="padding: 1rem; background:#223677;color: #fff;border-radius: 1.4rem;">
+                <img class="port-img" src="{{project.cover_image.url}}" alt="">
+                <h1 style="margin: 1rem 0;"><a href="">{{project.name}}</a></h1>
+                <p>{{project.description}}</p>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+        <a href="" class="reveal-content" style="width: 40%; margin: 0 auto;">See All</a>
+        </div>
+
+    </section>
+
+
+    <section id="testimonial">
+        <div class="testimonial-header">
+            <h2>Testimonials</span></h2>
+        </div>
+        <div class="testimonials">
+
+
+
+
+            <div class="container swiper">
+                <div class="slider-wrapper">
+                    <div class="card-list swiper-wrapper">
+                        {% for testimony in testimonies %}
+                        <div class="card-item swiper-slide test-card">
+                            <div class="card-head">
+                                <img src="{{testimony.image.url}}  " alt="">
+                                <div class="card-head-txt">
+                                    <h4 class="name">{{testimony.name}}</h4>
+                                    <p class="company">{{testimony.company}}</p>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                {{testimony.star}}
+
+                                {% with star_count=testimony.star|default:0 %}
+                                {% for i in testimony.stars|times %}
+                                <i class="fa-regular fa-star"></i>
+                                {% endfor %}
+                                {% endwith %}
+
+                            </div>
+                            <p class="blue">
+                                {{testimony.description}}
+                            </p>
+                            <p class="detail">
+                                {{testimony.testimony}}
+                            </p>
+                        </div>
+                        {% endfor %}
+
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <!-- <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Have an Awsome Project Idea? <span> Let’s Discuss</span></h2>
+
+        <div class="contact-form">
+            <div class="form-inner">
+
+                <form action="">
+                    <div class="email">
+                        <input type="email" placeholder="Enter Email Address">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="vuesax/bold/sms">
+                                <g id="sms">
+                                    <path id="Vector"
+                                        d="M22.6666 4.66675H9.33329C5.33329 4.66675 2.66663 6.66675 2.66663 11.3334V20.6667C2.66663 25.3334 5.33329 27.3334 9.33329 27.3334H22.6666C26.6666 27.3334 29.3333 25.3334 29.3333 20.6667V11.3334C29.3333 6.66675 26.6666 4.66675 22.6666 4.66675ZM23.2933 12.7867L19.12 16.1201C18.24 16.8267 17.12 17.1734 16 17.1734C14.88 17.1734 13.7466 16.8267 12.88 16.1201L8.70663 12.7867C8.27996 12.4401 8.21329 11.8001 8.54663 11.3734C8.89329 10.9467 9.51996 10.8667 9.94663 11.2134L14.12 14.5467C15.1333 15.3601 16.8533 15.3601 17.8666 14.5467L22.04 11.2134C22.4666 10.8667 23.1066 10.9334 23.44 11.3734C23.7866 11.8001 23.72 12.4401 23.2933 12.7867Z"
+                                        fill="#FD853A" />
+                                </g>
+                            </g>
+                        </svg>
+
+
+                    </div>
+                    <div class="message">
+                        <div class="svg">
+                            <img src="{% static 'resources/Frame 325.png' %}  " alt="">
+                        </div>
+
+                        <textarea name="message" id="" placeholder="Enter Message"></textarea>
+
+
+                    </div>
+                    <button>Send</button>
+            </div>
+        </div>
+        </form>
+        <div class="ratings">
+            <span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="vuesax/bold/star">
+                        <g id="star">
+                            <path id="Vector"
+                                d="M15.3899 5.21003L16.7999 8.03003C16.9899 8.42003 17.4999 8.79003 17.9299 8.87003L20.4799 9.29003C22.1099 9.56003 22.4899 10.74 21.3199 11.92L19.3299 13.91C18.9999 14.24 18.8099 14.89 18.9199 15.36L19.4899 17.82C19.9399 19.76 18.8999 20.52 17.1899 19.5L14.7999 18.08C14.3699 17.82 13.6499 17.82 13.2199 18.08L10.8299 19.5C9.11994 20.51 8.07994 19.76 8.52994 17.82L9.09994 15.36C9.18994 14.88 8.99994 14.23 8.66994 13.9L6.67994 11.91C5.50994 10.74 5.88994 9.56003 7.51994 9.28003L10.0699 8.86003C10.4999 8.79003 11.0099 8.41003 11.1999 8.02003L12.6099 5.20003C13.3799 3.68003 14.6199 3.68003 15.3899 5.21003Z"
+                                fill="white" />
+                            <path id="Vector_2"
+                                d="M8 5.75H2C1.59 5.75 1.25 5.41 1.25 5C1.25 4.59 1.59 4.25 2 4.25H8C8.41 4.25 8.75 4.59 8.75 5C8.75 5.41 8.41 5.75 8 5.75Z"
+                                fill="white" />
+                            <path id="Vector_3"
+                                d="M5 19.75H2C1.59 19.75 1.25 19.41 1.25 19C1.25 18.59 1.59 18.25 2 18.25H5C5.41 18.25 5.75 18.59 5.75 19C5.75 19.41 5.41 19.75 5 19.75Z"
+                                fill="white" />
+                            <path id="Vector_4"
+                                d="M3 12.75H2C1.59 12.75 1.25 12.41 1.25 12C1.25 11.59 1.59 11.25 2 11.25H3C3.41 11.25 3.75 11.59 3.75 12C3.75 12.41 3.41 12.75 3 12.75Z"
+                                fill="white" />
+                        </g>
+                    </g>
+                </svg>
+                <p>4.9/5 Average Ratings</p>
+            </span>
+            <span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="vuesax/bold/award">
+                        <path id="Vector"
+                            d="M17.8099 5.49V6.23L14.2699 4.18C12.9299 3.41 11.0599 3.41 9.72994 4.18L6.18994 6.24V5.49C6.18994 3.24 7.41994 2 9.66994 2H14.3299C16.5799 2 17.8099 3.24 17.8099 5.49Z"
+                            fill="white" />
+                        <path id="Vector_2"
+                            d="M17.84 7.96999L17.7 7.89999L16.34 7.11999L13.52 5.48999C12.66 4.98999 11.34 4.98999 10.48 5.48999L7.66 7.10999L6.3 7.90999L6.12 7.99999C4.37 9.17999 4.25 9.39999 4.25 11.29V15.81C4.25 17.7 4.37 17.92 6.16 19.13L10.48 21.62C10.91 21.88 11.45 21.99 12 21.99C12.54 21.99 13.09 21.87 13.52 21.62L17.88 19.1C19.64 17.92 19.75 17.71 19.75 15.81V11.29C19.75 9.39999 19.63 9.17999 17.84 7.96999ZM14.79 13.5L14.18 14.25C14.08 14.36 14.01 14.57 14.02 14.72L14.08 15.68C14.12 16.27 13.7 16.57 13.15 16.36L12.26 16C12.12 15.95 11.89 15.95 11.75 16L10.86 16.35C10.31 16.57 9.89 16.26 9.93 15.67L9.99 14.71C10 14.56 9.93 14.35 9.83 14.24L9.21 13.5C8.83 13.05 9 12.55 9.57 12.4L10.5 12.16C10.65 12.12 10.82 11.98 10.9 11.86L11.42 11.06C11.74 10.56 12.25 10.56 12.58 11.06L13.1 11.86C13.18 11.99 13.36 12.12 13.5 12.16L14.43 12.4C15 12.55 15.17 13.05 14.79 13.5Z"
+                            fill="white" />
+                    </g>
+                </svg>
+                <p>25+ Winning Awards</p>
+            </span>
+            <span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="vuesax/bold/shield-tick">
+                        <path id="Vector"
+                            d="M18.54 4.12009L13.04 2.06009C12.47 1.85009 11.54 1.85009 10.97 2.06009L5.47005 4.12009C4.41005 4.52009 3.55005 5.76009 3.55005 6.89009V14.9901C3.55005 15.8001 4.08005 16.8701 4.73005 17.3501L10.23 21.4601C11.2 22.1901 12.79 22.1901 13.76 21.4601L19.26 17.3501C19.91 16.8601 20.4401 15.8001 20.4401 14.9901V6.89009C20.4501 5.76009 19.59 4.52009 18.54 4.12009ZM15.48 9.72009L11.18 14.0201C11.03 14.1701 10.84 14.2401 10.65 14.2401C10.46 14.2401 10.27 14.1701 10.12 14.0201L8.52005 12.4001C8.23005 12.1101 8.23005 11.6301 8.52005 11.3401C8.81005 11.0501 9.29005 11.0501 9.58005 11.3401L10.66 12.4201L14.43 8.65009C14.72 8.36009 15.2 8.36009 15.49 8.65009C15.78 8.94009 15.78 9.43009 15.48 9.72009Z"
+                            fill="white" />
+                    </g>
+                </svg>
+                <p>Certified Product Designer</p>
+            </span>
+        </div>
+        </div>
+    </section>
+
+
+    <footer>
+
+        <div class="footer-svg vector ">
+
+
+
+        </div>
+        <div class=" circle-footer1">
+        </div>
+        <div class="circle-footer2"></div>
+
+        <div class="title">
+            <h3>
+                Let’s do Great Work Together
+            </h3>
+
+            <a href="" style="display: flex;align-items: center;justify-content: center;gap: 1rem;">Discuss your Project
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <g clip-path="url(#clip0_531_2289)">
+                        <path
+                            d="M22 11H11C10.0276 11 9.09495 11.3863 8.40732 12.0739C7.71968 12.7616 7.33337 13.6942 7.33337 14.6667V33C7.33337 33.9725 7.71968 34.9051 8.40732 35.5927C9.09495 36.2804 10.0276 36.6667 11 36.6667H29.3334C30.3058 36.6667 31.2385 36.2804 31.9261 35.5927C32.6137 34.9051 33 33.9725 33 33V22"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20.1666 23.833L36.6666 7.33301" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M27.5 7.33301H36.6667V16.4997" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_531_2289">
+                            <rect width="44" height="44" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </div>
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="">Home</a>
+                <a href="">Work Experience</a>
+                <a href="">Portfolio</a>
+                <a href="">Testimonials</a>
+            </div>
+            <div class="socials">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                    <g clip-path="url(#clip0_531_2244)">
+                        <path
+                            d="M6.85974 36.9579V12.8789H15.8894C17.4859 12.8789 19.017 13.5131 20.146 14.642C21.2749 15.771 21.9091 17.3021 21.9091 18.8986C21.9091 20.4952 21.2749 22.0263 20.146 23.1553C19.017 24.2842 17.4859 24.9184 15.8894 24.9184C17.4859 24.9184 19.017 25.5526 20.146 26.6815C21.2749 27.8105 21.9091 29.3416 21.9091 30.9381C21.9091 32.5347 21.2749 34.0658 20.146 35.1947C19.017 36.3237 17.4859 36.9579 15.8894 36.9579H6.85974Z"
+                            stroke="white" stroke-width="3.00987" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M6.85974 24.9189H15.8894" stroke="white" stroke-width="3.00987" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M28.9321 26.9254H42.9782C42.9782 25.0628 42.2383 23.2764 40.9212 21.9593C39.6041 20.6423 37.8178 19.9023 35.9552 19.9023C34.0925 19.9023 32.3062 20.6423 30.9891 21.9593C29.6721 23.2764 28.9321 25.0628 28.9321 26.9254ZM28.9321 26.9254V30.9385C29.1391 32.4408 29.8268 33.8357 30.8923 34.9147C31.9578 35.9937 33.344 36.6989 34.8435 36.9247C36.3431 37.1505 37.8754 36.8849 39.2115 36.1676C40.5476 35.4503 41.6156 34.3198 42.2558 32.9451"
+                            stroke="white" stroke-width="3.00987" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M32.9452 12.8789H38.9649" stroke="white" stroke-width="3.00987" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_531_2244">
+                            <rect width="48.1579" height="48.1579" fill="white"
+                                transform="translate(0.840088 0.839844)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 42 42" fill="none">
+                    <g clip-path="url(#clip0_531_2252)">
+                        <path d="M7.19177 6.99219L27.4664 34.6402H34.8398L14.5651 6.99219H7.19177Z" stroke="white"
+                            stroke-width="2.592" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7.19177 34.6402L18.8869 22.9451M23.1378 18.6942L34.8398 6.99219" stroke="white"
+                            stroke-width="2.592" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_531_2252">
+                            <rect width="41.472" height="41.472" fill="white"
+                                transform="translate(0.279785 0.0800781)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 59 59" fill="none">
+                    <g clip-path="url(#clip0_531_2258)">
+                        <path
+                            d="M10.2001 19.7592C10.2001 17.2131 11.2115 14.7713 13.0118 12.971C14.8122 11.1706 17.254 10.1592 19.8001 10.1592H39.0001C41.5462 10.1592 43.9879 11.1706 45.7883 12.971C47.5886 14.7713 48.6001 17.2131 48.6001 19.7592V38.9592C48.6001 41.5053 47.5886 43.9471 45.7883 45.7474C43.9879 47.5478 41.5462 48.5592 39.0001 48.5592H19.8001C17.254 48.5592 14.8122 47.5478 13.0118 45.7474C11.2115 43.9471 10.2001 41.5053 10.2001 38.9592V19.7592Z"
+                            stroke="white" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M22.2001 29.3592C22.2001 31.2687 22.9586 33.1001 24.3089 34.4503C25.6592 35.8006 27.4905 36.5592 29.4001 36.5592C31.3096 36.5592 33.141 35.8006 34.4912 34.4503C35.8415 33.1001 36.6001 31.2687 36.6001 29.3592C36.6001 27.4496 35.8415 25.6183 34.4912 24.268C33.141 22.9177 31.3096 22.1592 29.4001 22.1592C27.4905 22.1592 25.6592 22.9177 24.3089 24.268C22.9586 25.6183 22.2001 27.4496 22.2001 29.3592Z"
+                            stroke="white" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M40.2001 18.5596V18.5836" stroke="white" stroke-width="3.6" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_531_2258">
+                            <rect width="57.6" height="57.6" fill="white" transform="translate(0.599976 0.55957)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                    <g clip-path="url(#clip0_531_2265)">
+                        <path
+                            d="M6.59998 42.3608L9.89998 34.7608C7.3753 31.1769 6.24531 26.7948 6.72206 22.437C7.19882 18.0791 9.24955 14.0451 12.4894 11.0918C15.7292 8.13858 19.9355 6.46921 24.3187 6.39698C28.702 6.32475 32.961 7.85463 36.2963 10.6995C39.6317 13.5444 41.8143 17.5087 42.4343 21.8485C43.0544 26.1883 42.0694 30.6052 39.6642 34.2703C37.259 37.9354 33.5989 40.5968 29.3708 41.755C25.1427 42.9132 20.6372 42.4885 16.7 40.5608L6.59998 42.3608Z"
+                            stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M18.6 20.3604C18.6 20.6256 18.7053 20.8799 18.8929 21.0675C19.0804 21.255 19.3348 21.3604 19.6 21.3604C19.8652 21.3604 20.1195 21.255 20.3071 21.0675C20.4946 20.8799 20.6 20.6256 20.6 20.3604V18.3604C20.6 18.0951 20.4946 17.8408 20.3071 17.6532C20.1195 17.4657 19.8652 17.3604 19.6 17.3604C19.3348 17.3604 19.0804 17.4657 18.8929 17.6532C18.7053 17.8408 18.6 18.0951 18.6 18.3604V20.3604ZM18.6 20.3604C18.6 23.0125 19.6535 25.5561 21.5289 27.4314C23.4043 29.3068 25.9478 30.3604 28.6 30.3604M28.6 30.3604H30.6C30.8652 30.3604 31.1195 30.255 31.3071 30.0675C31.4946 29.8799 31.6 29.6256 31.6 29.3604C31.6 29.0951 31.4946 28.8408 31.3071 28.6532C31.1195 28.4657 30.8652 28.3604 30.6 28.3604H28.6C28.3348 28.3604 28.0804 28.4657 27.8929 28.6532C27.7053 28.8408 27.6 29.0951 27.6 29.3604C27.6 29.6256 27.7053 29.8799 27.8929 30.0675C28.0804 30.255 28.3348 30.3604 28.6 30.3604Z"
+                            stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_531_2265">
+                            <rect width="48" height="48" fill="white" transform="translate(0.599976 0.360352)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 44 44" fill="none">
+                    <g clip-path="url(#clip0_531_2271)">
+                        <path
+                            d="M7.33337 10.9997C7.33337 10.0272 7.71968 9.09458 8.40732 8.40695C9.09495 7.71932 10.0276 7.33301 11 7.33301H33C33.9725 7.33301 34.9051 7.71932 35.5928 8.40695C36.2804 9.09458 36.6667 10.0272 36.6667 10.9997V32.9997C36.6667 33.9721 36.2804 34.9048 35.5928 35.5924C34.9051 36.28 33.9725 36.6663 33 36.6663H11C10.0276 36.6663 9.09495 36.28 8.40732 35.5924C7.71968 34.9048 7.33337 33.9721 7.33337 32.9997V10.9997Z"
+                            stroke="white" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M14.6666 20.167V29.3337" stroke="white" stroke-width="2.75" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M14.6666 14.667V14.6853" stroke="white" stroke-width="2.75" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M22 29.3337V20.167" stroke="white" stroke-width="2.75" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M29.3333 29.3337V23.8337C29.3333 22.8612 28.947 21.9286 28.2594 21.2409C27.5718 20.5533 26.6391 20.167 25.6667 20.167C24.6942 20.167 23.7616 20.5533 23.0739 21.2409C22.3863 21.9286 22 22.8612 22 23.8337"
+                            stroke="white" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_531_2271">
+                            <rect width="44" height="44" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 44 44" fill="none">
+                    <g clip-path="url(#clip0_531_2280)">
+                        <path
+                            d="M14.6666 22.0003C14.6666 22.4866 14.8598 22.9529 15.2036 23.2967C15.5474 23.6405 16.0137 23.8337 16.5 23.8337C16.9862 23.8337 17.4525 23.6405 17.7963 23.2967C18.1401 22.9529 18.3333 22.4866 18.3333 22.0003C18.3333 21.5141 18.1401 21.0478 17.7963 20.704C17.4525 20.3601 16.9862 20.167 16.5 20.167C16.0137 20.167 15.5474 20.3601 15.2036 20.704C14.8598 21.0478 14.6666 21.5141 14.6666 22.0003Z"
+                            stroke="white" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M25.6666 22.0003C25.6666 22.4866 25.8598 22.9529 26.2036 23.2967C26.5474 23.6405 27.0137 23.8337 27.5 23.8337C27.9862 23.8337 28.4525 23.6405 28.7963 23.2967C29.1401 22.9529 29.3333 22.4866 29.3333 22.0003C29.3333 21.5141 29.1401 21.0478 28.7963 20.704C28.4525 20.3601 27.9862 20.167 27.5 20.167C27.0137 20.167 26.5474 20.3601 26.2036 20.704C25.8598 21.0478 25.6666 21.5141 25.6666 22.0003Z"
+                            stroke="white" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M28.4166 31.1663C28.4166 32.9997 31.1666 36.6663 32.0833 36.6663C34.8333 36.6663 37.2771 33.6102 38.4999 31.1663C39.7228 28.1102 39.4166 20.4725 35.7499 10.083C33.0788 8.22217 30.2499 7.62634 27.4999 7.33301L25.7179 10.8585C23.2593 10.4341 20.7461 10.4341 18.2874 10.8585L16.4999 7.33301C13.7499 7.62634 10.9211 8.22217 8.24995 10.083C4.58328 20.4725 4.27711 28.1102 5.49995 31.1663C6.72278 33.6102 9.16661 36.6663 11.9166 36.6663C12.8333 36.6663 15.5833 32.9997 15.5833 31.1663"
+                            stroke="white" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12.8334 30.25C19.25 32.0833 24.75 32.0833 31.1667 30.25" stroke="white"
+                            stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_531_2280">
+                            <rect width="44" height="44" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+    <div class="circle">
+    </div>
+
+
+    <div class="circle2 ">
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+    <script src="{% static 'script.js' %} "></script>
+
+</body>
+
+</html>
