@@ -44,7 +44,7 @@
                 <a href="{% url 'portfolio' %}">Portfolio</a>
             </div>
             <div class="hire" style="display: flex;align-items: center;">
-                <a href="" class="pointer">Hire me</a>
+                <a href="https://calendly.com/iniisaac20/30min" class="pointer">Hire me</a>
                 <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="icon / outlined / directions / straight arrows / up right">
                         <path id="Vector" d="M13.975 33.625L33.225 14.375" stroke="white" stroke-width="2.2"
@@ -182,7 +182,7 @@
             {% if forloop.counter <= 6 %} <div class="port1 port"
                 style="padding: 1rem; background:#223677;color: #fff;border-radius: 1.4rem;">
                 <img class="port-img" src="{{project.cover_image.url}}" alt="">
-                <h1 style="margin: 1rem 0;"><a href="">{{project.name}}</a></h1>
+                <h1 style="margin: 1rem 0;"><a href="{% url 'project_detail' project.id %}">{{project.name}}</a></h1>
                 <p>{{project.description}}</p>
         </div>
         {% endif %}

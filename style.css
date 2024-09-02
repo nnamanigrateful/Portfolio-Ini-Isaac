@@ -2,13 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Lexend:wght@100..900&display=swap');
+@font-face {
+    font-family: 'Monument';
+    src: url(resources/MonumentExtended-Regular.otf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    /* border: 1px white solid;border-width: thin; */
 }
 
  body{
@@ -22,20 +25,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem 0;
-    /* padding-bottom: 20rem ; */
+    padding: 0 5rem !important;
+    border-radius: 3.5rem;
+    border: 2px solid rgba(212, 212, 212, 0.664);
+    width: 85%;
+    margin-top: 4rem !important;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    border: 2px solid rgba(173, 173, 173, 0.11);
+    background: #cacaca0a;  
+    backdrop-filter: blur(2px); 
  }
- header{
-    background: url(resources/icons/bg_top.png);
-    background-size: cover;
- }
+
  nav a{
     color: white;
     text-decoration: none;
  }
  nav .logo a{
     font-family: 'Preahvihear';
-    font-size: 2.88rem;
+    font-size: 2rem;
+    color: #FD853A;
  }
 
  .nav-links{
@@ -57,10 +66,9 @@ section .hero{
 
 }
 section{
-    
     overflow-x: hidden;
 }
-section , nav, footer{
+section , footer{
     padding: 0 4rem !important;
     z-index: 10 !important;
 }
@@ -81,19 +89,9 @@ section , nav, footer{
 .top-svg{
     bottom: 4rem;
     height: 4rem;
-    /* margin-bottom: 20rem; */
 }
-.nav-svg{
-    /* top: -10px; */
-}
-.middle-svg{
-    /* top: 110rem; */
-    z-index: -1;
-}
-.footer-svg{
-    /* top: -10rem; */
-    bottom: 11rem;
-}
+
+
 
 
 .hero{
@@ -109,7 +107,7 @@ section , nav, footer{
     font-family: 'Poppins'!important;
     font-size: 5rem;
     font-weight: 600;
-    line-height: 5.3125rem; /* 106.25% */
+    line-height: 5.3125rem; 
     letter-spacing: -0.3rem;
     color: white;
     }
@@ -128,7 +126,7 @@ section , nav, footer{
     font-family: 'Poppins';
     font-size: 1.8rem;
     font-weight: 300;
-    line-height: 2.9375rem; /* 134.286% */
+    line-height: 2.9375rem; 
     margin: 0 auto;
 }
 .hero-call-to-action{
@@ -144,7 +142,6 @@ section , nav, footer{
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
-    /* gap: 2rem; */
 }
 .hero-call-to-action a{
     color: #fff;
@@ -199,19 +196,8 @@ section , nav, footer{
 
 .band{
     margin-top: 0;
-    /* height: 9.187rem; */
-    /* background: #FB6514; */
     width: 100vw;
-    /* padding-top:2.5rem; */
-
 }
-.band-inner{
-    /* margin: 0 auto; */
-    /* height: 4rem; */
-    /* background: #FFF; */
-    /* transform: skewy(-2deg) ; */
-}
-
 
 /* CREDENTIALS */
 
@@ -221,9 +207,8 @@ section , nav, footer{
 
 .cred-container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    /* gap: 3rem; */
+    gap: 4rem;
     margin-top: 10rem;
     margin-bottom: 8rem;
     padding: 0 0;
@@ -231,55 +216,52 @@ section , nav, footer{
 }
 .cred-card{
     order: 1;
-    width: 40%;
+    width: 35%;
     aspect-ratio: 1/1;
     border-radius: 4.66563rem;
     background: #2A2D3E;
     color: #fff;
     padding: 5% 3%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.cred_text_container{
+    margin: auto auto;
+    width: 100%;
 }
 
-.cred-card h2{
-    font-family: "Birthstone Bounce", cursive;
-    text-align: center;
-    font-size: 2.79938rem;
-    font-style: normal;
-    font-weight: 300 !important;
-    line-height: normal;
-    text-transform: capitalize;
-    margin-bottom: 3.1rem;
-}
+
 .cred-card p{
     color: #6A8BF5;
-    font-family: 'JasmineUPC';
-    font-size: 2rem;
+    font-family: 'Poppins';
+    font-size: 1.6rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
     text-transform: capitalize;
-    margin-bottom: 1rem;
 }
 .cred-card h3{
     color: var(--white, #FFF);
-    font-family: 'Poppins';
-    font-size: 3rem;
+    font-family: 'Monument', 'Poppins';
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
     text-transform: capitalize;
-    margin-bottom: 2rem;
+}
+.cred-card svg{
+    height:  50px !important;
+    width: 50px;
 }
 .cred-card .svg{
     position: absolute;
     right: 23%;
-    /* margin: auto right; */
     width: 100%;
+    bottom: 2rem;
+    transform: rotate(90deg);
 }
 .cred-info{
-    /* height: 34.40881rem; */
-    width: 55%;
-    /* padding-top: 3rem; */
+    width: 50%;
     order: 2;
 }
 .cred-info h2{
@@ -288,7 +270,6 @@ section , nav, footer{
     font-size: 3.7rem;
     font-style: normal;
     font-weight: 600;
-    /* line-height: 100%; 4.8rem */
     letter-spacing: -0.072rem;
     margin-bottom: 0 !important;    
 }
@@ -304,7 +285,6 @@ section , nav, footer{
     line-height: normal;
     letter-spacing: -0.027rem;
     margin-bottom: 1rem;
-    /* text-align: center; */
 }
 
 
@@ -322,7 +302,6 @@ section , nav, footer{
 
 }
 .profile-header h2{
-    /* display: flex; */
     width: 85%;
     color: var(--white, #FFF);
     font-family: 'Poppins';
@@ -350,32 +329,51 @@ section , nav, footer{
 
 .portfolios{
     display: grid;
-    /* grid-auto-columns: 4rem; */
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
+}
+.port{
+    border-radius: 1rem;
+    border: 0.72px solid rgba(255, 255, 255, 0.20);
+    background: #2A2D3E;
+    backdrop-filter: blur(0.6773759126663208px);
+    padding: 1rem;
+    height: fit-content ;
+    font-family: 'poppins';
+}
+.port h4{
+    color: #fff;
+    font-size: 1.296rem;
+    font-style: normal;
+    font-weight: 600;
 
-
-    
+}
+.port p{
+    color: var(--Orange-25, #FFFAF5);
+    font-size: 0.6rem;
+    font-weight: 400;
+    margin-bottom: .8rem;
+}
+.port a{
+    background: #FD853A;
+    color: #ffffff;
+    padding: 5px 1rem;
+    border-radius: 5px;
+    margin-top: 1rem !important;
+    position: relative;
 }
 
-/* .portfolios .port{
-    display: flex;
-    flex-wrap:nowrap;
-    
-    width: 30% ;
-    aspect-ratio: 32/20;
-    border-radius: 1.25rem;
-    
-    margin-bottom: 2rem;
-    border: 1px solid white;
-    
-    background: var(--gradient, linear-gradient(207deg, rgba(0, 0, 0, 0.00) 47.41%, rgba(0, 0, 0, 0.36) 76.39%, rgba(0, 0, 0, 0.50) 89.23%));
-    } */
 .port-img{
     width: 100% ;
+    aspect-ratio: 3/2;
+    
     border-radius: 1.25rem;
     margin: auto 0;
     background: var(--gradient, linear-gradient(207deg, rgba(0, 0, 0, 0.00) 47.41%, rgba(0, 0, 0, 0.36) 76.39%, rgba(0, 0, 0, 0.50) 89.23%));
+    }
+.port-img img{
+    width: 100%;
+    height: 14.148rem;
 
 }
 
@@ -402,12 +400,11 @@ section , nav, footer{
     text-align: center;
 }
 .contact h2 span{
-    color: #FB6514;
+    color: #FD853A;
 }
 .contact-form{
     width: 56%;
     margin-top: 3.7rem;
-    /* padding: -1rem; */
 }
 .form-inner{
     padding: 2rem;
@@ -426,6 +423,7 @@ section , nav, footer{
     border: 1px solid #FFF;border-width: thin;
     border-radius: 1rem;
 }
+
 .email input, .email input:focus, .message textarea, .message textarea:focus{
     background: transparent;
     border: none;
@@ -433,7 +431,7 @@ section , nav, footer{
     color: #FFF;
 }
 .email input, .message textarea{
-    min-width:86% ;
+    min-width:86% !important;
     resize: none;
 }
 .email input::placeholder, .message textarea::placeholder{
@@ -448,7 +446,7 @@ section , nav, footer{
 .message {
     display: flex;
     align-content: center !important;
-    justify-content: space-between;
+    gap: 1rem;
     width: 100%;
     padding-top: 2rem;
     margin-bottom: 5rem;
@@ -457,10 +455,12 @@ section , nav, footer{
 
 .message .img{
     background: #FFEAD5;
-
     height: 2rem ;
     margin-right: 10rem;
     margin-bottom: 1rem;
+}
+.form-inner{
+    width: 100%;
 }
 .form-inner button{
    padding: 1.2rem 2.2rem;
@@ -474,10 +474,6 @@ section , nav, footer{
    border: none;
    bottom: 10%;
 }
-
-
-
-
 
 .contact .ratings{
     margin-top: 2rem;
@@ -495,19 +491,6 @@ section , nav, footer{
 .ratings span svg{
     fill: #ffffff69 !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -548,9 +531,6 @@ section , nav, footer{
     width: 40%;
     aspect-ratio: 1;
     z-index: 10;
-
-    /* top: 720%;
-    left: 50%; */
  }
  .circle-footer2{
     border-radius: 55.32813rem;
@@ -561,8 +541,6 @@ section , nav, footer{
     width:25%;
     aspect-ratio: 1;
     z-index: -10;
-
-    /* top: 10%; */
     left: 70%;
  }
 
@@ -579,11 +557,8 @@ section , nav, footer{
     border-top: 1px solid rgba(255, 255, 255, 0.233);
     background-image: url(resources/icons/bg_top.png) !important ;
     background-size: cover;
-    /* border: 1px solid white; */
     overflow-y: hidden;
     z-index: 10;
-    /* margin-bottom: -5rem; */
-
  }
 footer .title{
     display: flex;
@@ -594,7 +569,6 @@ footer .title{
 }
 footer .title h3{
     background: linear-gradient(180deg, #6A8BF5 0%, #DE28CC 100%);
-    /* height: 8rem; */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -606,7 +580,7 @@ footer .title h3{
     line-height: 6rem;
     padding: 1rem 0;
 }
-footer .title a, .my-profile a{
+footer .title a{
     padding: 1rem 1.5rem;
     background: #FD853A;
     color: #FFF;
@@ -616,25 +590,19 @@ footer .title a, .my-profile a{
 .footer-inner{
     display: flex;
     flex-direction: column;
-    
     align-items: center;
 }
 .footer-links {
     display: flex;
     color: #FFF;
-    
     font-size: 2rem;
     font-style: normal;
-
-    /* display: flex; */
     gap: 4rem;
     margin-bottom: 3rem;
-    
 }
 .footer-links a{
     display: inline-flex;
     font-family: 'Poppins';     
-    /* margin-right: 4rem ; */
     color: #FFF;
     font-weight: 200 !important;
 }
@@ -647,10 +615,8 @@ footer .title a, .my-profile a{
     padding: 1rem;
     border-radius: 49.9%;
     line-height: 1rem;
-    /* fill: #fff; */
     height: 4rem !important ;
     width: 4rem;
-    
 }
 .socials svg:hover{
     background: #ffffff57;
@@ -675,7 +641,7 @@ footer .title a, .my-profile a{
     justify-content: center;
     height: auto;
     margin: 2rem 0;
-    background: url("resources/icons/bg\ top.png");
+    /* background: url("resources/icons/bg top.png"); */
   }
   .testimonial-header{
     display: flex;
@@ -683,11 +649,10 @@ footer .title a, .my-profile a{
     align-items: center;
     padding-top: 6.7rem;
     color: #fff;
-    font-size: 2.2rem;
-
+    font-size: 2rem;
   }
   
-  .slider-wrapper {
+  .slider-wrapper, .snippet-wrapper {
     overflow: hidden;
     max-width: 2200px;
     margin: 0 0px 55px;
@@ -697,17 +662,33 @@ footer .title a, .my-profile a{
     height: auto;
     color: #fff;
     user-select: none;
-    /* padding: 2rem; */
     display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
     border-radius: 1.875rem;
     border: 2px solid rgba(255, 255, 255, 0.11);
-    
-
     background: #2a2d3e56;  
     backdrop-filter: blur(2px);
+    z-index: 12 !important;
+  }
+  .card-container{
+    width: 92% ;
+    margin: auto auto; 
+  }
+  .card-container .rating,   .card-container p{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .snippetcard{
+    height: auto;
+    color: #fff;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.875rem;
+    border: none !important;
+    background: none !important;  
+    backdrop-filter: none !important;
   }
   .test-card{
     padding: 1.5rem;
@@ -747,7 +728,6 @@ footer .title a, .my-profile a{
   }
   .card-item .detail{
     margin-top: .6rem;
-    /* margin-bottom: rem; */
     font-family: 'Lexend';
     font-size: .8rem;
     font-style: normal;
@@ -765,36 +745,14 @@ footer .title a, .my-profile a{
     padding: 4px;
   }
   
-  /* .card-list .card-item .user-profession {
-    font-size: 1.15rem;
-    color: #e3e3e3;
-    font-weight: 500;
-    margin: 14px 0 40px;
-  }
-  
-  .card-list .card-item .message-button {
-    font-size: 1.25rem;
-    padding: 10px 35px;
-    color: #030728;
-    border-radius: 6px;
-    font-weight: 500;
-    cursor: pointer;
-    background: #fff;
-    border: 1px solid transparent;
-    transition: 0.2s ease;
-  }
-  
-  .card-list .card-item .message-button:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid #fff;
-    color: #fff;
-  } */
+
   
   .slider-wrapper .swiper-pagination-bullet {
     background: #fff;
     height: 13px;
     width: 13px;
     opacity: 0.5;
+
   }
   
   .slider-wrapper .swiper-pagination-bullet-active {
@@ -826,7 +784,6 @@ footer .title a, .my-profile a{
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2rem;
-    /* justify-content: center; */
 }
 .frame{
     margin-inline: auto;
@@ -834,17 +791,7 @@ footer .title a, .my-profile a{
 }
 
 
-/* 
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-} */
 
 .wrapper {
   width: 90%;
@@ -883,7 +830,6 @@ footer .title a, .my-profile a{
   color: #ffffff75;
   text-align: center;
   line-height: 4rem;
-  /* opacity: .5; */
 }
 
 .item1 {
@@ -923,14 +869,6 @@ footer .title a, .my-profile a{
 
   
   @media (max-width: 980px) {
-    /* .slider-wrapper {
-      margin: 0 10px 40px;
-    }
-  
-    .slider-wrapper .swiper-slide-button {
-      display: none;
-    } */
-
     section, nav, footer{
         padding: 0 2.7rem !important;
     }
@@ -968,33 +906,26 @@ footer .title a, .my-profile a{
     }
     .cred-container{
         margin-top: 6rem;margin-bottom: 6rem;
+        gap: 2rem;
  
     }
     .cred-card{
-        width: 47%;
-        border-radius: 2.5rem;
+        width: 48%;
+        border-radius: 4rem;
 
     }
     
-    .cred-card h2{
-        font-size: 2.8rem;
-        margin-bottom: 1rem;
-    }
     .cred-card p{
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
+        font-size: 1.5rem;
     }
     .cred-card h3{
         font-size: 2.3rem;
-        margin-bottom: 1rem;
     }
-    .cred-card svg{
-        position: relative;
-        left: 55%;
+    .cred-card .svg{
+        position: absolute;
     }
     .cred-info{
         width: 52%;
-        /* padding-top: 3rem; */
         order: 2;
     }
     .cred-info h2{
@@ -1002,7 +933,7 @@ footer .title a, .my-profile a{
         margin-bottom: 1rem;    
     }
     .cred-info p{
-        font-size: .9rem;
+        font-size: .85rem;
     }
     .portfolios{
         grid-template-columns: 1fr 1fr;
@@ -1023,7 +954,6 @@ footer .title a, .my-profile a{
     .form-inner button{
         padding: .7rem 1.4rem;;
         font-size: 1rem;
-        /* right: %; */
      }
      .contact h2{
         font-size: 2rem;
@@ -1041,7 +971,6 @@ footer .title a, .my-profile a{
         line-height: 2.8rem;
     }
     footer .title a{
-        /* padding: .6rem .8rem; */
         background: #FD853A;
         color: #FFF;
         border-radius: 3rem;
@@ -1051,14 +980,10 @@ footer .title a, .my-profile a{
     .footer-inner{
         display: flex;
         flex-direction: column;
-        
         align-items: center;
     }
     .footer-links {
- 
-        
         font-size: 1.2rem;
-        
     }
     .footer-links a{
         font-weight: 200 !important;
@@ -1069,12 +994,14 @@ footer .title a, .my-profile a{
     .socials svg{
         height: 3.5rem !important ;
         width: 3.5rem;
-        
     }
     
   }
 
   @media (max-width: 668px) {
+    nav {
+        justify-content: center;
+    }
     section, nav, footer{
         padding: 0 2rem !important;
     }
@@ -1086,32 +1013,26 @@ footer .title a, .my-profile a{
         text-align: center;
     }
     .cred-container{
-        margin-top: 6rem;margin-bottom: 6rem;
-        flex-direction: column;
- 
+        margin-top: 0rem;margin-bottom: 4rem;
+        flex-direction: column;gap: 3rem;
     }
     .cred-info{
         width: 80%;
-        /* padding-top: 3rem; */
         order: 1;
     }
     .cred-card{
-        width: 67%;
-        border-radius: 2.5rem;
+        width: 71%;
+        border-radius: 23.4;
         order: 2;
+    }
+  
 
-    }
-    .cred-card h2{
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
     .cred-card p{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-bottom: .5rem;
     }
     .cred-card h3{
-        font-size: 2rem;
+        font-size: 2.4rem;
         font-style: normal;
         margin-bottom: 1rem;
     }
@@ -1125,9 +1046,6 @@ footer .title a, .my-profile a{
     .portfolios{
         grid-template-columns: 1fr ;
     }
-
-
-
 
     .contact-form{
         width: 100%;
@@ -1183,18 +1101,14 @@ footer .title a, .my-profile a{
         overflow-x: hidden !important; 
     }
 
-
-
     nav{
         padding: 3rem 2rem;
-        /* padding-bottom: 5rem ; */
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
      }
      nav a{color: white;text-decoration: none;
      }nav .logo a{font-size: 1.88rem;}
-
-
-
-
      .hero-text{
         margin-bottom: 0;
     }
@@ -1224,7 +1138,6 @@ footer .title a, .my-profile a{
     .hero-call-to-action svg{
         width: 1.4rem;
         height: 1.4rem;
-        /* flex-shrink: 0; */
     }
     
 
@@ -1246,31 +1159,25 @@ footer .title a, .my-profile a{
     }
     .cred-container{
         flex-direction: column;
-        margin-top: 3rem;
+        margin-top: 3rem;gap: 3rem;
         margin-bottom: 3rem;
     }
     .cred-card{
         width: 100%;
-        border-radius: 15px;
+        border-radius: 4rem;
         padding: 2rem 2.4rem;
         order: 2;
     }
-    
-    .cred-card h2{
-        font-size: 2.6rem;
-        margin-bottom: 3.1rem;
-        text-align: center;
-    }
+  
     .cred-card p{
         font-size: 1.6rem;
         margin-bottom: .5rem;
     }
     .cred-card h3{
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         font-style: normal;
-        margin-bottom: 2rem;
     }
-    .cred-card svg{position: absolute;right:5% !important;}.cred-info{width: 55%;padding-top: 1.5rem;}
+    .cred-card svg{bottom: 1rem; height: 40px; width: 40px;}.cred-info{width: 55%;padding-top: 1.5rem; margin-top: 2rem;}
 
 
 
@@ -1301,6 +1208,7 @@ footer .title a, .my-profile a{
 
 
 
+      .snippetcard{margin-right: -.5rem !important;}
 
     .testimonial-header{
         padding: 3rem 0 2rem 0;
@@ -1355,21 +1263,23 @@ footer .title a, .my-profile a{
   .email input::placeholder, .message textarea::placeholder{
     font-size: .8rem;
 }
+.message textarea::placeholder{
+    padding-top: 7px;
+}
 .message {
     width: 100%;
     padding-top: 1rem;
-    /* margin-bottom:rem; */
     height: 5rem;
     gap: .4rem;
+    display: flex;
+     align-items: center;  
     
 }
 
-.message .svg{
+.message img{
     padding: .2rem;
     height: 2rem;
-    width: 2rem;
-    display: flex;justify-content: center;
-    /* align-items: center; */
+    
 }
 .form-inner button{
    padding: .5rem .8rem;;
@@ -1419,11 +1329,8 @@ footer .title a, .my-profile a{
 .footer-links {
     display: flex;
     color: #FFF;
-    
     font-size: .8rem;
     font-style: normal;
-
-    /* display: flex; */
     gap: .8rem;
     margin-bottom: 1rem;
     
@@ -1476,10 +1383,6 @@ footer .title a, .my-profile a{
 
  }
 
- .circle-footer1{
-    /* top: 70rem; */
-    /* left: 60rem; */
- }
  .circle-footer2{
     border-radius: 55.32813rem;
     opacity: 1;
@@ -1489,9 +1392,7 @@ footer .title a, .my-profile a{
     width:20%;
     aspect-ratio: 1;
     z-index: -10;
-
     top: -10%;
-    /* left: 0%; */
  }
  .circle-footer1{
     border-radius: 55.32813rem;
@@ -1502,10 +1403,7 @@ footer .title a, .my-profile a{
     width: 20%;
     aspect-ratio: 1;
     z-index: -10;
-
      top: 10%;
-    /*left: 50%; */
  }
-
 
 }
